@@ -1,0 +1,13 @@
+using System.Collections.Generic;
+
+namespace Domain
+{
+    public class Usuario
+    {
+        public int Id { get; set; }
+        public string  Nome { get; set; }
+        public string Senha  { get; set; }
+        public string  Role { get; set; }
+        public virtual ICollection<Pedido> Pedidos { get; set; }
+    }
+}
